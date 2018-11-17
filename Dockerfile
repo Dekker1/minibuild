@@ -1,6 +1,7 @@
 FROM debian:stable-slim
 
 RUN apt-get update -y && apt-get install -y \
+    binutils \
     file \
     libcairo2 \
     tzdata
