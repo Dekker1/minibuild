@@ -5,7 +5,8 @@ RUN apt-get update -y && apt-get install -y \
     curl \
     file \
     libcairo2 \
-    tzdata
+    tzdata \
+    unzip
 
 ADD https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage /appimagetool
 RUN chmod +x /appimagetool
